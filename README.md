@@ -49,11 +49,11 @@ Q4 >  Identify and suggest the top 5 most commonly used hashtags on the platform
         GROUP BY day
         ORDER BY total DESC
 
-Q6 >  Provide how many times does average user posts on Instagram. Also, provide the total number of photos on Instagram/total number of users
+Q6 >  Provide how many times does average user posts on Instagram. 
 
            SELECT (SELECT COUNT(*)FROM photos)/(SELECT COUNT(*) FROM users) as avg;
 
-7. Provide data on users (bots) who have liked every single photo on the site (since any normal user would not be able to do this)
+7. Provide data on users (bots) who have liked every single photo on the site 
 
                     SELECT users.id,username, COUNT(users.id) As total_likes_by_user
                     FROM users
