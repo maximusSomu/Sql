@@ -42,6 +42,7 @@ Q4 >  Identify and suggest the top 5 most commonly used hashtags on the platform
           LIMIT 5;
           
  Q5 >  5.What day of the week do most users register on? Provide insights on when to schedule an ad campaign
+ 
         SELECT 
         dayname(created_at) AS day,
         count(*) as total
